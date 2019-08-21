@@ -5,6 +5,7 @@ var changeState = function(state){
     
     document.body.className= "body-state" + state;
     clearInterval(timer);
+
      countdownNumber=10;
      document.getElementById('countdown').innerHTML = countdownNumber;
 
@@ -26,7 +27,7 @@ var changeState = function(state){
                 document.getElementById('cant-wait').className='cant-wait';
             }
 
-            if(countdownNumber<=0){
+            if(countdownNumber <= 0){
                
                 changeState(3);
             };
